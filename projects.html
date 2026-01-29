@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>My Projects</h1>
+        <p>Here are some of my recent web development projects with images and details.</p>
+        
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/project1.JPG" 
+                     alt="Portfolio Website" 
+                     class="project-image">
+                <h3>Portfolio Website</h3>
+                <p>A responsive portfolio website showcasing my skills and projects with clean, modern design.</p>
+                
+                <div class="project-tech">
+                    <strong>Technologies:</strong> HTML5, CSS3, JavaScript, Responsive Design
+                </div>
+                
+                <div class="project-tech">
+                    <strong>Features:</strong> Mobile-friendly, Fast Loading, Smooth Animations
+                </div>
+                
+                <ul class="project-features">
+                    <li>Responsive navigation</li>
+                    <li>Interactive elements</li>
+                    <li>Contact form</li>
+                </ul>
+                
+                <button class="btn" onclick="viewProject(1)">View Project</button>
+                <button class="btn btn-secondary" onclick="viewCode(1)">View Code</button>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/project2.jpg" 
+                     alt="E-commerce Store" 
+                     class="project-image">
+                <h3>E-commerce Store</h3>
+                <p>Full-featured online shopping platform with shopping cart, user accounts, and secure checkout.</p>
+                
+                <div class="project-tech">
+                    <strong>Technologies:</strong> PHP, MySQL, JavaScript, Bootstrap
+                </div>
+                
+                <div class="project-tech">
+                    <strong>Features:</strong> Payment Processing, Admin Panel, Product Management
+                </div>
+                
+                <ul class="project-features">
+                    <li>User registration/login</li>
+                    <li>Shopping cart system</li>
+                    <li>Order tracking</li>
+                </ul>
+                
+                <button class="btn" onclick="viewProject(2)">View Project</button>
+                <button class="btn btn-secondary" onclick="viewCode(2)">View Code</button>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/project3.JPG" 
+                     alt="Weather App" 
+                     class="project-image">
+                <h3>Weather App</h3>
+                <p>Real-time weather application displaying current conditions and 5-day forecasts with API integration.</p>
+                
+                <div class="project-tech">
+                    <strong>Technologies:</strong> JavaScript, API Integration, CSS Grid, Local Storage
+                </div>
+                
+                <div class="project-tech">
+                    <strong>Features:</strong> Live Updates, Location-based, Weather Charts
+                </div>
+                
+                <ul class="project-features">
+                    <li>Current weather display</li>
+                    <li>5-day forecast</li>
+                    <li>City search functionality</li>
+                </ul>
+                
+                <button class="btn" onclick="viewProject(3)">View Project</button>
+                <button class="btn btn-secondary" onclick="viewCode(3)">View Code</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio | All projects use placeholder images from picsum.photos</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Add these functions to your script.js or here
+        function viewProject(projectId) {
+            const projectNames = ['Portfolio Website', 'E-commerce Store', 'Weather App'];
+            alert(`Opening: ${projectNames[projectId-1]}\nIn a real portfolio, this would link to the live project.`);
+        }
+        
+        function viewCode(projectId) {
+            const projectNames = ['Portfolio Website', 'E-commerce Store', 'Weather App'];
+            alert(`Viewing code for: ${projectNames[projectId-1]}\nIn a real portfolio, this would link to GitHub repository.`);
+        }
+    </script>
+</body>
+</html>
